@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Prediction System</h1>
+
+        <!-- Input section for period -->
+        <label for="period">Enter Period:</label>
+        <input type="text" id="period" class="period-input" placeholder="Enter Period" />
+
+        <br />
+
+        <!-- Input section for 5 results -->
+        <label for="results">Enter 5 Results:</label>
+        <div id="results">
+            <input type="text" class="result-input" maxlength="1" />
+            <input type="text" class="result-input" maxlength="1" />
+            <input type="text" class="result-input" maxlength="1" />
+            <input type="text" class="result-input" maxlength="1" />
+            <input type="text" class="result-input" maxlength="1" />
+        </div>
+
+        <!-- Button to trigger prediction -->
+        <button id="predictBtn">Predict</button>
+
+        <!-- Table for predictions -->
+        <table id="predictionTable">
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Predicted Sum</th>
+                    <th>High/Low</th>
+                    <th>Odd/Even</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Prediction labels -->
+        <div class="predictions">
+            <p id="predictionLabel">Predicted Number: </p>
+            <p id="predictionHighLowLabel">High/Low: </p>
+            <p id="predictionOddEvenLabel">Odd/Even: </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
